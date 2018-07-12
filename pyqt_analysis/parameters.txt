@@ -1,0 +1,27 @@
+{
+  "file_name": "C:/Users/yue/ownCloud/Yue/Personal Data/2017/17 Aug/0804/water_cir_nsor_fid_1",
+  "time_x_limit": [
+    "0",
+    "1"
+  ],
+  "time_y_limit": [
+    "-1",
+    "1"
+  ],
+  "freq_x_limit": [
+    "31000",
+    "31400"
+  ],
+  "freq_y_limit": [
+    "0",
+    "1"
+  ],
+  "time_cursor": [
+    "0.002",
+    "0.6"
+  ],
+  "freq_cursor": [
+    "31100",
+    "31300"
+  ]
+}
