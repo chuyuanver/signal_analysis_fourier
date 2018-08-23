@@ -1,5 +1,5 @@
 {
-  "file_name": "C:/Users/yue/ownCloud/Yue/Personal Data/2017/17 Aug/0804/water_cir_nsor_fid_1",
+  "file_name": "C:/Users/Hilty/Desktop/NSOR/Data/2018/Aug/0803/NMR_sig22",
   "time_x_limit": [
     "0",
     "1"
