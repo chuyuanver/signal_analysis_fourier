@@ -156,9 +156,6 @@ class MainWindow(QMainWindow):
         saveParameters.setStatusTip('save the parameters on screen to file')
         saveParameters.triggered.connect(self.save_parameters)
 
-        self.data_type = QComboBox()
-        self.data_type.setStatusTip('bin for legacy data recorded from labview program, big endian coded binary data, npy for numpy type data')
-        self.data_type.addItems(['bin', '.npy'])
 
         '''
         setting menubar
@@ -185,9 +182,8 @@ class MainWindow(QMainWindow):
         self.toolbar.addAction(openFile) # add what happens when this tool is interacted
 
 
-        self.toolbar.addWidget(self.data_type)
         self.toolbar.addAction(renewData)
-        self.toolbar.addSeparator()
+        self.toolbar.addtuu`Separator()
 
         self.toolbar.addAction(self.verticalZoom)
         self.toolbar.addAction(self.horizontalZoom)
@@ -987,10 +983,7 @@ class MainWindow(QMainWindow):
             file_name = dlg.selectedFiles()[0]
             save_parameter(PARAMETER_FILE,
                         **{"file_name": file_name})
-            if str(self.data_type.currentText()) =='bin':
-                raw_data = np.fromfile(file_name, '>f8')
-            elif str(self.data_type.currentText()) == '.npy':
-                raw_data = np.load(file_name)
+            raw_data = np.load(file_name)
             self.data = {}
             self.data['raw_x'] = raw_data[::2]
             self.data['raw_y'] = raw_data[1::2]
